@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Lauf 2 · Rennen – BARC</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"><style>
+:root{--gold:#c9a13b;--gold-d:#a9832a;--gold-l:#f3e6bf;--ink:#1f1811;--dark:#1c140c;
+  --muted:#7d7466;--line:#e9e1cf;--zebra:#faf7ef;--p1:#f7ecc9;}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;background:#fff;color:var(--ink);font-family:"Open Sans",-apple-system,"Segoe UI",Arial,sans-serif;
+  font-size:14px;line-height:1.5;}
+a{color:inherit;}
+.wrap{max-width:900px;margin:0 auto;padding:22px 14px 34px;}
+h1.titel,h2.titel{font-family:Oswald,"Arial Narrow",Arial,sans-serif;font-weight:500;text-transform:uppercase;
+  letter-spacing:.02em;text-align:center;margin:0 0 4px;font-size:30px;color:#222;line-height:1.15;}
+.untertitel{text-align:center;color:var(--gold-d);font-weight:600;font-size:13.5px;margin:0 0 2px;}
+.stand{text-align:center;color:var(--muted);font-size:11.5px;margin:2px 0 20px;}
+h3.lauf{background:var(--dark);color:var(--gold-l);font-family:Oswald,"Arial Narrow",Arial,sans-serif;font-weight:500;
+  text-transform:uppercase;letter-spacing:.05em;font-size:15px;margin:26px 0 0;padding:9px 14px;border-radius:4px 4px 0 0;}
+.laufbody{border:1px solid var(--line);border-top:none;border-radius:0 0 4px 4px;padding:14px 12px 2px;}
+h4.teil{font-family:Oswald,"Arial Narrow",Arial,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.04em;
+  font-size:14px;color:var(--gold-d);margin:4px 0 8px;}
+h3.layout{font-family:Oswald,"Arial Narrow",Arial,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.04em;
+  font-size:17px;text-align:center;color:#333;margin:22px 0 10px;}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 18px;border:1px solid var(--line);border-radius:4px;}
+table{border-collapse:collapse;width:100%;background:#fff;}
+th{background:var(--dark);color:var(--gold-l);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
+  padding:9px 10px;text-align:left;white-space:nowrap;}
+td{padding:7px 10px;border-top:1px solid var(--line);font-size:13px;white-space:nowrap;}
+tbody tr:nth-child(even) td{background:var(--zebra);}
+tbody tr.p1 td{background:var(--p1);font-weight:700;}
+th.n,td.n{text-align:right;font-variant-numeric:tabular-nums;}
+td.pos{font-weight:700;width:1%;text-align:center;}
+td.name{white-space:nowrap;}
+td.pkt{font-weight:800;}
+td.fl{color:#6a2c99;font-weight:700;}
+.lk{display:inline-block;min-width:54px;text-align:center;padding:1px 7px;border-radius:3px;font-size:10.5px;font-weight:700;
+  letter-spacing:.04em;text-transform:uppercase;}
+.lk.pro{background:#a23fb5;color:#fff;}.lk.am{background:#1f9bd1;color:#fff;}.lk.rookie{background:#a5c93a;color:#1f2a05;}
+.lk.none{background:#e6e0d2;color:#7d7466;}
+.gw{display:inline-block;min-width:26px;text-align:center;padding:1px 6px;border-radius:3px;font-weight:800;}
+.gw.full{background:#f5d33b;}.gw.part{background:#a6dd86;}.gw.none{background:#ece7da;color:#8a8170;}
+.tag{display:inline-block;margin-left:5px;padding:0 6px;border-radius:3px;font-size:10px;font-weight:700;color:#fff;
+  background:#9a9184;vertical-align:1px;}
+.tag.dnf{background:#a5302c;}
+.navrow{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 18px;}
+.navrow.unten{margin:22px 0 0;}
+.btn{display:inline-block;background:var(--gold);border:1px solid var(--gold-d);color:#1c140c;text-decoration:none;
+  font-size:13px;padding:6px 16px;border-radius:3px;line-height:1.35;}
+.btn:hover{background:#d9b24c;}
+.btn.aktiv{background:var(--dark);border-color:var(--dark);color:var(--gold-l);}
+.btn.leise{background:#fff;color:#6b4a20;}
+.btn.leise:hover{background:var(--gold-l);}
+.leer{text-align:center;color:var(--muted);padding:18px 0;}
+.hinweis{text-align:center;color:var(--muted);font-size:12px;margin:-8px 0 18px;}
+.legende{text-align:center;color:var(--muted);font-size:11.5px;margin:-6px 0 18px;}
+/* nur eigenständige Website */
+.kopf{background:linear-gradient(115deg,#140d07 0%,#3d2814 45%,#7c5f2c 100%);color:#fff;}
+.kopf-innen{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:10px 16px;flex-wrap:wrap;}
+.marke{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:Oswald,"Arial Narrow",Arial,sans-serif;
+  font-size:17px;letter-spacing:.01em;}
+.marke img{height:32px;}
+.hauptnav{display:flex;flex-wrap:wrap;gap:4px 16px;margin-left:auto;font-size:13px;}
+.hauptnav a{color:#f4ead0;text-decoration:none;padding:4px 0;border-bottom:2px solid transparent;}
+.hauptnav a:hover,.hauptnav a.aktiv{border-bottom-color:var(--gold);color:#fff;}
+.hero{text-align:center;padding:30px 16px 34px;}
+.hero h1{font-family:Oswald,"Arial Narrow",Arial,sans-serif;font-weight:500;text-transform:uppercase;font-size:44px;
+  margin:0;letter-spacing:.01em;line-height:1.1;}
+.hero .balken{width:min(360px,70%);height:5px;background:var(--gold);margin:12px auto 10px;}
+.hero p{margin:0;color:#f1e6c8;font-size:14px;}
+.fuss{text-align:center;padding:10px 0 30px;}
+.fuss img{height:86px;}
+.kacheln{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:6px 0 10px;}
+.kachel{display:block;border:1px solid var(--line);border-radius:4px;padding:16px;text-decoration:none;background:var(--zebra);}
+.kachel:hover{border-color:var(--gold);}
+.kachel b{display:block;font-family:Oswald,"Arial Narrow",Arial,sans-serif;font-weight:500;text-transform:uppercase;font-size:18px;
+  letter-spacing:.02em;margin-bottom:2px;}
+.kachel span{color:var(--muted);font-size:12.5px;}
+@media (max-width:560px){
+  h1.titel,h2.titel{font-size:24px;}
+  .hero h1{font-size:30px;}
+  .hauptnav{margin-left:0;}
+  td,th{padding:6px 8px;}
+}
+</style></head><body><main class="wrap"><h1 class="titel">Lauf 2 · Rennen</h1><p class="untertitel">2. GP von Ampfing · Ampfing · 22.09.2026</p><p class="stand">Stand: 23.09.2026, 12:40 Uhr</p><div class="navrow"><a class="btn leise" href="index.html">&larr; 2. GP von Ampfing</a></div><p class="leer">Noch keine Ergebnisse erfasst.</p><p class="legende">Lila = schnellste Runde · Klammer = Wertungsplatz · FL Fast Lap · +Pos meiste Plätze gutgemacht · SZ Schnapszahl · PB neue Bestzeit</p></main></body></html>
